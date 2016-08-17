@@ -26,9 +26,9 @@
     group_vars/
         all                   # Las variables bajo esrte directorio aplican a todos los grupos
             apt.yml           # Archivo del role ansible-apt para todos los grupos
-        webservers            # Directorio donde se asignan variables para los grupos de webservers 
+        webservers            # Directorio donde se asignan variables para los grupos de webservers
             apt.yml           # Cada archivo corresponde a un role. Ej. apt.yml
-            nginx.yml         # 
+            nginx.yml         #
         postgresql            # Directorio para variables del grupo de postgresql
             postgresql.yml    # Cada archivo corresponde a un role. ej. postgresql
             postgresql-password.yml   # Archivo de contraseñas cifrado
@@ -39,10 +39,10 @@
 
     roles/
         dependencies.yml	   # Dependencias e información sobre los roles
-        external              # Todos los roles deben estar en un repositorio git o en [ansible-galaxy](https://galaxy.ansible.com) 
+        external              # Todos los roles deben estar en un repositorio git o en [ansible-galaxy](https://galaxy.ansible.com)
                               # Los roles que están en el archivo dependencies.yml serán descargados en este directorio.
         internal              # Todos los roles que no son publicos
-        
+
     shell/                    # Bash/Shell scripts para facilitar tareas
         setup                 # Archivos para actualizar roles y dependencias de ansible
 
@@ -142,6 +142,10 @@ $ ./shell/setup/roles.sh
 ansible-playbook -i inventories/develop.ini plays/webservers.yml
 ```
 
+## Copyright and license
 
+***
+
+Copyright (c) 2014-2015 Iván Jaimes. See [LICENSE](LICENSE) for details.
 
 
