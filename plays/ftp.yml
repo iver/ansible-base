@@ -1,0 +1,9 @@
+---
+
+- name: webservers.yml | All roles
+  hosts: ftpservers
+  sudo: True
+
+  roles:
+    - { role: common,                   tags: ["common"] }
+    - { role: iver.vsftp,               tags: ["vsftp"] }

@@ -1,0 +1,18 @@
+- src: git+https://github.com/ivan-iver/apt.git
+  version: "v0.1.7"
+  name: apt
+
+- src: git+https://github.com/ivan-iver/sudo.git
+  version: "2.0.0"
+
+- src: git+https://github.com/ivan-iver/postgresql.git
+  version: "v1.1.1"
+  name: iver.postgresql
+
+- src: git+https://github.com/ivan-iver/nginx.git
+  version: "1.4.1"
+  name: iver.nginx
+
+- src: git+https://github.com/ivan-iver/vsftp.git
+  version: "2.1.1"
+  name: iver.vsftp

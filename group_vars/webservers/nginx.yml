@@ -1,0 +1,14 @@
+---
+nginx_etc              : "/etc/nginx"
+nginx_max_clients      : 1024
+nginx_user             : "www-data"
+nginx_install_repo     : "nginx"
+nginx_apt_state        : "present"
+nginx_vhosts           : []
+nginx_worker_processes : "4"
+nginx_worker_connections: "768"
+nginx_sendfile         : "off"
+nginx_hash_max_size    : "2048"
+nginx_client_max_body_size : "280m"
+nginx_vhost_path           : "/etc/nginx/sites-enabled/"
+nginx_for_social           : true

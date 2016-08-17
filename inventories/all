@@ -1,0 +1,45 @@
+[webservers]
+webserver1 ansible_ssh_host= ansible_ssh_port=22
+webserver2 ansible_ssh_host= ansible_ssh_port=22
+
+[dbservers]
+api_db1 ansible_ssh_host= ansible_ssh_port=22
+api_db2 ansible_ssh_host= ansible_ssh_port=22
+
+[statsdbserver_node1]
+statsdb1 ansible_ssh_host= ansible_ssh_port=22
+
+[statsdbserver_node2]
+statsdb2 ansible_ssh_host= ansible_ssh_port=22
+
+[statsservers]
+stats01 ansible_ssh_host= ansible_ssh_port=22
+stats02 ansible_ssh_host= ansible_ssh_port=22
+
+[apidbserver_node1]
+apidb01 ansible_ssh_host= ansible_ssh_port=22
+
+[apidbserver_node2]
+apidb02 ansible_ssh_host= ansible_ssh_port=22
+
+[nfsserver]
+files ansible_ssh_host= ansible_ssh_port=22
+
+[apiservers]
+api01 ansible_ssh_host= ansible_ssh_port=22
+api02 ansible_ssh_host= ansible_ssh_port=22
+
+[storageservers]
+storage01 ansible_ssh_host= ansible_ssh_port=22
+storage02 ansible_ssh_host= ansible_ssh_port=22
+
+[siteservers]
+site01 ansible_ssh_host= ansible_ssh_port=22
+site02 ansible_ssh_host= ansible_ssh_port=22
+
+[admservers]
+adm01 ansible_ssh_host= ansible_ssh_port=22
+
+[jobservers]
+job01 ansible_ssh_host= ansible_ssh_port=22
+
