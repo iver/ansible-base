@@ -26,7 +26,7 @@ cleanup() {
 trap "cleanup"  ERR INT TERM
 
 # Check ansible-galaxy
-[[ -z "$(which ansible-galaxy)" ]] && msg_exit "Ansible no esta disponible en tu path."
+[[ -z "$(which ansible-galaxy)" ]] && msg_exit "ansible-galaxy no esta disponible en tu path."
 
 # Check roles req file
 [[ ! -f "$ROLES_REQUIREMNTS_FILE" ]]  && msg_exit "roles_requirements '$ROLES_REQUIREMNTS_FILE' no existe o hay un problema de permisos.\nPor favor, revísalo y ejecutalo de nuevo."
