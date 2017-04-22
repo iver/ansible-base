@@ -26,9 +26,12 @@ $ make install
 
 Esto instalará ansible y sus dependencias.
 
-* Una vez instalado `ansible`, hay que crear el archivo `vpass` en el directorio raíz y agregar la constraseña.
+* Una vez instalado `ansible`, hay que crear el archivo `.vpass` en el directorio raíz y agregar la constraseña (configuración por defecto).
 
-Al ejecutar el comando anterior se genera automáticamente el archivo `vpass`, solo hay que validar que esté correctamente configurado.
+
+**Nota:** En el archivo `ansible.cfg` se puede sobre-escribir este comportamiento ya que al ejecutar el comando anterior, se genera automáticamente el archivo `vpass`, solo hay que validar que `ansible.cfg` esté correctamente configurado con la línea: 
+
+```vault_password_file=vpass```
 
 ### <a name="roles"></a> Instalación de roles
 
